@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: platform-auth #服务名 对应配置中心的application
+  cloud:
+    config:
+      uri: http://localhost:9090/ #配置中心platform-service地址
+      profile: default  #对应配置中心的profile
+      label: master #对应配置中心的label
+
+server:
+  port: 9001  #端口

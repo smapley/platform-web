@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: platform-zuul #服务名
+server:
+  port: 8080 #端口
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/ #注册中心
+zuul:
+  routes:
+    auth: #路由映射规则,将auth开头的访问映射到platform-auth服务
+      path: /auth/**
+      serviceId: platform-auth

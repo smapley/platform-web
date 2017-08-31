@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: platform-config #服务名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://git.oschina.net/ericnts/platform-config #git仓库地址
+          username: ericnts@163.com #git账号
+          password: Eric&oschina926 #git密码
+server:
+  port: 9090 #端口
